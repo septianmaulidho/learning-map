@@ -43,6 +43,22 @@ return [
             'showScriptName' => false,
             'rules' => [],
         ],
+        'assetManager' => [
+            'bundles' => [
+                // 'dmstr\web\AdminLteAsset' => [
+                //     'skin' => 'skin-black',
+                // ],
+                'yii\web\JqueryAsset' => [
+                    'js' => ['/css/medical-admin/js/jquery-3.6.0.min.js']
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => ['']
+                ],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'css' => ['/css/medical-admin/css/bootstrap.css'],
+                ],
+            ],
+        ],
     ],
     'params' => $params,
 ];

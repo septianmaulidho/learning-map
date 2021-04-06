@@ -17,7 +17,7 @@ function searchLocation() {
         console.log("Rp. " + parseInt(parseFloat(data.route.distance) * 20000));
         console.log(data.route.distance);
         $('#form-address-location').attr('hidden', false);
-        // $('#pesanan-alamat').val(data.route.locations[1].street + " " + data.route.locations[1].adminArea5);
+        $('#pesanan-alamat').val(data.route.locations[1].street + " " + data.route.locations[1].adminArea5);
         $('#pesanan-jarak-disp').val(parseFloat(data.route.distance).toFixed(2));
         $('#pesanan-harga-disp').val(Math.floor(parseFloat(data.route.distance) * 20) * 1000);
     });
